@@ -3,6 +3,7 @@ const mensaje = document.querySelector (".mensaje");
 const copyText = document.querySelector (".mensaje");
 
 
+
 //'La letra "e" es convertida para "enter"'
 //'La letra "i" es convertida para "imes"'
 //'La letra "a" es convertida para "ai"'
@@ -36,6 +37,7 @@ function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value =  textoEncriptado
     textArea.value = "";
+    mensaje.style.backgroundImage= "none"
 }
 
 
@@ -56,7 +58,7 @@ function desencriptar(stringDesencriptada){
  function btnLimpiar(){
     textArea.value = "";
     mensaje.value = "";
-   //mensaje.style.backgroundImage= "url('img/fondo.jpg')"
+    mensaje.style.backgroundImage= "URL('../image/futurista-mujer.png')";
 }
 
 function btnTextToClipboard(){
@@ -65,8 +67,12 @@ function btnTextToClipboard(){
 
     //Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
-
+    mensaje.value = "";
+    mensaje.style.backgroundImage= "url('/image/futurista-mujer.png')";
     //Alert the copied text
     alert("Texto copiado: " +copyText.value);
 }
 
+function inicial() {
+    textArea.value = "";
+}

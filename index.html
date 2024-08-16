@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-<link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
-<link href="'https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'" rel="stylesheet">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="'https://https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&family=IBM+Plex+Mono:wght@300;400;500&family=Kanit:wght@300;400;500&display=swap'" rel="stylesheet">
     <title>Encriptador One Challenge</title>
 </head>
-<body>
+<body onload="inicial()">
     <header>
-        <img class="logo" src="/image/Logo.png" alt="logo de alura" >
+        <img class="logo" src="/image/alura-logo.png" alt="logo de alura" >
         <p class="informacion">ONE Challenge Encriptador</p>
 
     </header>
+
+    <video class="video__background" autoplay muted loop>
+        <source src="/video/tarjetamadre.mp4" type="video/mp4">
+      </video>
+
     <main>
       
         <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui">
+            <textarea class="text-area" cols="40" rows="10"  placeholder="Ingrese el texto aqui">
             </textarea>
             <div>
-                <h6 class="informacion"><img src="./icon/icons8-alerta-16.png" alt="alert icon"> 
-                    No acepta mayusculas y caracteres especiales</h6>
+                <h6 class="informacion_alerta"><img src="./icon/icons8-alerta-16.png" alt="alert icon"> 
+                No acepta mayusculas y caracteres especiales</h6>
             </div>
             <div>
                 <div class="botones"></div>
@@ -30,21 +36,24 @@
                 <button class="botones btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 <button class="botones btn-limpiar" onclick="btnLimpiar()">Limpiar</button>
             </div>
+
         </section>
 
         <section>
 
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
-            <div class="boton"></div>
+            
+            <textarea class="mensaje" cols="28" rows="13.5"></textarea>
+             <div class="boton"></div>
                 <button class="boton btn-copiar" onclick="btnTextToClipboard()">copiar</button>
-            </div>
+             </div>
+             
         </section>
     </main>
     <script src="/js/script.js"></script>
     </div>
    <div >
     <footer>
-      <p class="informacion">  © 2024 Copyright: Mariela Valverde</p>
+      <p class="informacion__footer">  © 2024 Copyright: Mariela Valverde</p>
         <div class="presentacion__enlaces">
             <a class="presentacion__enlaces__link" href="https://www.linkedin.com/in/marielavalverdeb/" 
             target="_blank">

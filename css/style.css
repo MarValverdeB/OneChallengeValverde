@@ -1,50 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;0,600;1,500&display=swap');
-
 :root {
-    --color-primary: #0A3871;
-    --color-secondary: #f099d8;
-    --color-tertiary: #000000;
+    --color-primary: white !important;
+    --color-secondary: #eb0aab;
+    --color-tertiary: #000000f4;
     --color-quaternary: #8867bd;
     --color-quintanary: #923294; 
-    --color-hover: #f00aaf;
+    --color-hover: #e409eb;
 
-    --ibm-plex-mono-medium: 
-        font-family: "IBM Plex Mono", sans-serif;
+    --ibm-plex-mono-light:
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 300;
+        font-style: normal;
+      
+      --ibm-plex-mono-regular:
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+      
+      --ibm-plex-mono-medium: 
+        font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
 
-    --montserrat-alternates-medium:
-        font-family: "Montserrat Alternates", sans-serif;
+      --kanit-light:
+        font-family: "Kanit", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      
+      --kanit-regular:    
+       font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+      --kanit-medium:
+        font-family: "Kanit", sans-serif;
         font-weight: 500;
         font-style: normal;
 
-    --montserrat-alternates-semibold:
-        font-family: "Montserrat Alternates", sans-serif;
-        font-weight: 600;
+      --chakra-petch-light:
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 300;
         font-style: normal;
-    --montserrat-alternates-medium-italic:
-        font-family: "Montserrat Alternates", sans-serif;
+      
+      --chakra-petch-regular:
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+      --chakra-petch-medium:
+        font-family: "Chakra Petch", sans-serif;
         font-weight: 500;
-        font-style: italic;
+        font-style: normal;
   }
 
 *{
-    background: none;
-    font-family: var(--montserrat-alternates-medium);
+    background: none; 
+    font-family: var(--ibm-plex-mono-medium);
+    color: var(--color-primary);
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 150%;
-    padding: 0%;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 .header {
     color: var(--color-primary);
+    font-family: var(--kanit-medium);
+    font-size: 50px;
     height: 14vh;
     position: relative;
     display: flex;
+}
+.logo {
+    padding-top: 8px;
+    width: 5%;
+    margin-left: 10px;
 }
 
 body {
@@ -53,49 +84,77 @@ body {
 
 main{
     display:flex;
-    margin-bottom: 60px;
-    margin-left: 80px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 700px;
+    justify-content: center;
 }
 
 .text-area {
-    border: none;
-    color: #0A3871;
+    border: line;
+    border-radius: 30px;
+    border-color: var(--color-secondary);
+    background-color: #000000bd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--color-primary);
+    font-family: var(--kanit-medium);
+    font-size: 30px;
     margin-top: 90px;
+    padding: 10px;
+    margin-left: 10px;
+    opacity: 120%;
     text-transform: lowercase;
 }
 
-::placeholder{ color: #0A3871;}
+::placeholder{ 
+    color: var(--color-primary);
+
+}
 .text-area:focus {
     outline: none;
 }
 
 .mensaje{
     background: none;
-    background-image: url("/image/mujer-futurista.png");
+    background-image: url("/image/futurista-mujer.png");
+    background-position:50% 35% ;
     background-repeat: no-repeat;
-    border: none;
-    border-radius: 30px;
-    color: #0A3871;
-    margin-left: 80px;
-    margin-top: 20px;
+    background-color: #000000bd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: line;
+    opacity: 120%;
+    border-color: var(--color-secondary);
+    border-radius: 24px;
+    color: var(--color-primary);
+    margin-left: 98px;
+    margin-top: 50px;
     padding-left: 20px;
     position:fixed;
+    font-family: var(--kanit-medium);
+    font-size: 30px;
 }
+
+
 .mensaje:focus { 
     outline: none;
 }
 
 .botones {
+    width: 50;
     display: flex;
     margin-top: 18px;
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
-    text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.2);
+    border-bottom: 1px solid hsla(314, 77%, 54%, 0.702);
+    text-shadow: none;
     text-decoration: none !important;
     text-transform: uppercase;
-    color: #0A3871 !important;
+    color: var(--color-primary)!important;
     font-weight: bold;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 0px 0px;
     margin: 0 3px;
     position: relative;
     display: inline-block;
@@ -103,6 +162,12 @@ main{
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
+    box-shadow: 0 5px 0 #db9dcc,
+    0 11px 5px hsla(288, 90%, 62%, 0.88);
+    background-color: #000000a9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .botones:active {
@@ -113,19 +178,18 @@ main{
 }
 
 .btn-desencriptar {
-    background: pink;
-    box-shadow: 0 10px 0 #8e29a7,
-    0 11px 5px hsla(0, 0%, 0%, 0.5);
+    background: var(--color-tertiary);
     border: 1px SOLID #f605b2;
-    opacity: .25;
+    opacity: 120%;
     border-radius: 24px;
-    color: #0A3871;
+    color: #0bef67;
     cursor: pointer;
-    height: 55px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 300px;
-
+    height: 67px;
+    margin-left: 18px;
+    margin-right: 18px;
+    height: 50px;
+    width: 160px;
+    font-size: 18px;
 }
 
 .btn-desencriptar:hover {
@@ -135,19 +199,20 @@ main{
 
 .btn-desencriptar:active {
     box-shadow: 0 3px 0 #3a6600,
-                0 4px 6px hsla(0, 0%, 0%, 0.7);
+                0 4px 6px hsla(0, 0%, 0%, 0.719);
 }
 .btn-encriptar {
-    background: pink;
-    box-shadow: 0 10px 0 #8e29a7,
-                0 11px 5px hsla(0, 0%, 0%, 0.5);
-    border: 1px solid #f605b2;
-    opacity: .25;
+    background: var(--color-tertiary);
+    border: 1px SOLID #f605b2;
+    opacity: 120%;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 55px;
-    width: 300px;
+    height: 67px;
+    height: 50px;
+    width: 160px;
+    font-size: 18px;
+    margin-left: 80px;
 }
 
 .btn-encriptar:active {
@@ -161,34 +226,39 @@ main{
 }
 
 .btn-limpiar {
-    background: pink;
-    box-shadow: 0 10px 0 #8e29a7,
-    0 11px 5px hsla(0, 0%, 0%, 0.5);
-    border: 1px solid #f605b2;
-    opacity: .25;
+    background: var(--color-tertiary);
+    border: 1px SOLID #f605b2;
+    opacity: 120%;
     border-radius: 24px;
-    color: #0A3871;
+    color: #0bef67;
     cursor: pointer;
-    height: 55px;
-    width: 300px;
+    height: 50px;
+    width: 160px;
+    font-size: 18px;
 }
 
 .btn-limpiar:active {
     box-shadow: 0 3px 0 #3a6600,
-                0 4px 6px hsla(0, 0%, 0%, 0.7);
+                0 4px 6px hsla(0, 0%, 0%, 0.719);
+}
+
+.btn-limpiar:hover {
+    background-color: var(--color-hover);
+    padding: 2%;
 }
 
 .boton {
+    width: 50;
     display: flex;
     margin-top: 18px;
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
-    text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.2);
+    border-bottom: 1px solid hsla(314, 77%, 54%, 0.702);
+    text-shadow: none;
     text-decoration: none !important;
     text-transform: uppercase;
-    color: #0A3871 !important;
+    color: var(--color-primary)!important;
     font-weight: bold;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 0px 0px;
     margin: 0 3px;
     position: relative;
     display: inline-block;
@@ -196,6 +266,8 @@ main{
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     transition: all 0.1s;
+    box-shadow: 0 5px 0 #db9dcc,
+    0 11px 5px hsla(288, 90%, 62%, 0.88);
 }
 
 .boton:active {
@@ -206,42 +278,60 @@ main{
 }
 
 .btn-copiar {
-    background: pink;
-    box-shadow: 0 10px 0 #8e29a7,
-    0 11px 5px hsla(0, 0%, 0%, 0.5);
-    border: 1px solid #f605b2;
-    opacity: .25;
+    background: var(--color-tertiary);
+    border: 1px SOLID #f605b2;
+    opacity: 120%;
     border-radius: 24px;
-    color: #0A3871;
     cursor: pointer;
-    height: 55px;
-    margin-left: 145px;
-    margin-top: 402px;
+    margin-left: 247px;
+    margin-top: 550px;
     position: absolute;
-    width: 300px;
+    height: 50px;
+    width: 160px;
+    font-size: 18px;
 }
 
 .btn-copiar:active {
-    box-shadow: 0 3px 0 #8e29a7,
-    0 4px 6px hsla(0, 0%, 0%, 0.7);
+    box-shadow: 0 3px 0 #e01ea6,
+                0 4px 6px hsla(153, 97%, 46%, 0.7);
+}
+
+.btn-copiar:hover {
+    background-color: var(--color-hover);
 }
 
 .informacion {
-    color: #0A3871;
-    font-size: 18px;
+    color: var(--color-primary);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.informacion__alerta {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 200;
+    font-family: var(--kanit-light);
+}
+
+.informacion__footer {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--ibm-plex-mono-medium);
 }
 
 footer {
     text-align: center;
-    color: #0A3871;
+    color: var(--color-primary);
     padding: 24px;
-    font-family: montserrat;
-    font-size: 10px;
-    font-weight: 400;
 
 }
 
-#background-video {
+video { 
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -256,11 +346,7 @@ footer {
 @media (max-width: 1200px) {
    .header {
     height: 10vh;
+
   }
 
-  main {
-    margin-left: 100px;
-    flex-direction: column;
-    align-items: center;
-  }
 }
