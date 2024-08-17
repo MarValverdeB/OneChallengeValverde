@@ -3,23 +3,15 @@
 Encriptador es un programa que encripta y desencripta cadenas de texto.
 ## Installation
 
-Visual Studio Code
-Git
+Visual Studio Code <br/> Git
 
-## Usage
+👉 Sigue estos pasos para ambientar el proyecto en tu computadora!
 
-```python
-import foobar
+## Paso 1 : Clona el repositorio git clone https://github.com/MarValverdeB/OneChallengeValverde
+## Paso 2 : Abre el folder en Visual Studio Code.
 
-# returns 'words'
-foobar.pluralize('word')
+Ingresar texto en minúsculas <br/>
 
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
 
 ## Contributing
 
