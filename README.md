@@ -3,8 +3,8 @@
 Encriptador es un programa que encripta y desencripta cadenas de texto.
 ## Instalación
 
-- Utilizar la última versión de Visual Studio Code
-- Utilizar la última versión de Git
+- Utilizar la última versión de Visual Studio Code <img src="/icon/vsc.jpg">
+- Utilizar la última versión de Git <img src="/icon/github.png">
 
 👉 Sigue estos pasos para ambientar el proyecto en tu computadora!
 
