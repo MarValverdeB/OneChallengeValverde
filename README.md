@@ -14,7 +14,7 @@ git clone https://github.com/MarValverdeB/OneChallengeValverde
 ## Paso 3️⃣ : Botón derecho en la carpeta raíz, click derecho y ejecutar Open Live Server
 
 ## La pantalla inicial se muestra a continuación:
-[![Image]("/image/pantallaInicial.png")]
+<img src="/image/pantallaInicial.png">
 
 👉 Sigue estos pasos para probar la funcionalidad:
 
