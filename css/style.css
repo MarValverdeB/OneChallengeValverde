@@ -57,55 +57,62 @@
     font-family: var(--ibm-plex-mono-medium);
     color: var(--color-primary);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
+    font-size: 1.25rem;
+    line-height: 120%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+
 }
 
 .header {
     color: var(--color-primary);
     font-family: var(--kanit-medium);
-    font-size: 50px;
+    font-size: 3.125rem;
     height: 14vh;
     position: relative;
     display: flex;
 }
 .logo {
-    padding-top: 8px;
-    width: 5%;
-    margin-left: 10px;
+    padding-top: 2%;
+    width: 2.5%;
+    margin-left: 1%;
 }
 
 body {
-    margin: 1%;
+    margin: 0%;
 }
 
 main{
     display:flex;
-    margin-bottom: 50px;
-    margin-left: 200px;
-    margin-right: 700px;
+    margin-bottom: 5.5%;
+    margin-left: 7.2%;
+    margin-right: 30%;
+    margin-top: 2%;
     justify-content: center;
 }
 
 .text-area {
-    border: line;
-    border-radius: 30px;
+    border: none;
+    border-radius: 3%;
     border-color: var(--color-secondary);
-    background-color: #000000bd;
+    background-color: #0000005f;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: var(--color-primary);
     font-family: var(--kanit-medium);
-    font-size: 30px;
-    margin-top: 90px;
-    padding: 10px;
-    margin-left: 10px;
+    font-size: 2rem;
+    padding: 1%;
     opacity: 120%;
+    width: 80%;
+    height: 50%;
+    margin-left: 25%;
+    top: 90%;
+    gap: 10%;
     text-transform: lowercase;
+    left: 80%;
 }
 
 ::placeholder{ 
@@ -117,25 +124,23 @@ main{
 }
 
 .mensaje{
-    background: none;
-    background-image: url("/image/futurista-mujer.png");
-    background-position:50% 35% ;
-    background-repeat: no-repeat;
-    background-color: #000000bd;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: line;
-    opacity: 120%;
+    border: none;
+    border-radius: 3%;
     border-color: var(--color-secondary);
-    border-radius: 24px;
-    color: var(--color-primary);
-    margin-left: 98px;
-    margin-top: 50px;
-    padding-left: 20px;
-    position:fixed;
+    background-image: url("/image/mujer-pelo-blanco.png");
+    background-color: #0000005f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-primary); 
     font-family: var(--kanit-medium);
-    font-size: 30px;
+    font-size: 2rem;
+    padding-left: 2%;
+    opacity: 120%;
+    width: 80%;
+    margin-left: 60%;
+    margin-top: 0%;
+    gap: 10%;
 }
 
 
@@ -144,18 +149,18 @@ main{
 }
 
 .botones {
-    width: 50;
+    width: 23%;
     display: flex;
-    margin-top: 18px;
+    margin-top: 10%;
+    height: 4.1667%;
     border-bottom: 1px solid hsla(314, 77%, 54%, 0.702);
     text-shadow: none;
     text-decoration: none !important;
     text-transform: uppercase;
     color: var(--color-primary)!important;
     font-weight: bold;
-    border-radius: 5px;
-    padding: 0px 0px;
-    margin: 0 3px;
+    border-radius: 5%;
+    padding: 1% 1%;    
     position: relative;
     display: inline-block;
     -webkit-transition: all 0.1s;
@@ -167,7 +172,8 @@ main{
     background-color: #000000a9;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
+    font-size: .75rem;
 }
 
 .botones:active {
@@ -184,12 +190,11 @@ main{
     border-radius: 24px;
     color: #0bef67;
     cursor: pointer;
-    height: 67px;
-    margin-left: 18px;
-    margin-right: 18px;
-    height: 50px;
-    width: 160px;
-    font-size: 18px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    height: 15%;
+    
 }
 
 .btn-desencriptar:hover {
@@ -208,11 +213,9 @@ main{
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 67px;
-    height: 50px;
-    width: 160px;
-    font-size: 18px;
-    margin-left: 80px;
+    margin-top: 5%;
+    height: 15%;
+    margin-left: 25%;
 }
 
 .btn-encriptar:active {
@@ -232,9 +235,8 @@ main{
     border-radius: 24px;
     color: #0bef67;
     cursor: pointer;
-    height: 50px;
-    width: 160px;
-    font-size: 18px;
+    margin-top: 5%;
+    height: 15%;
 }
 
 .btn-limpiar:active {
@@ -248,16 +250,16 @@ main{
 }
 
 .boton {
-    width: 50;
+    width: 9%;
     display: flex;
-    margin-top: 18px;
+    margin-top: 15%;
     border-bottom: 1px solid hsla(314, 77%, 54%, 0.702);
     text-shadow: none;
     text-decoration: none !important;
     text-transform: uppercase;
     color: var(--color-primary)!important;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 5%;
     padding: 0px 0px;
     margin: 0 3px;
     position: relative;
@@ -283,12 +285,10 @@ main{
     opacity: 120%;
     border-radius: 24px;
     cursor: pointer;
-    margin-left: 247px;
-    margin-top: 550px;
+    margin-left: 22%;
+    height: 4.1667%;
+    font-size: .75rem;
     position: absolute;
-    height: 50px;
-    width: 160px;
-    font-size: 18px;
 }
 
 .btn-copiar:active {
@@ -310,24 +310,26 @@ main{
 
 .informacion__alerta {
     color: var(--color-primary);
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 200;
     font-family: var(--kanit-light);
+    text-align: right;
+    margin-top: 1%;
 }
 
 .informacion__footer {
     color: var(--color-primary);
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1%;
     font-family: var(--ibm-plex-mono-medium);
 }
 
 footer {
     text-align: center;
     color: var(--color-primary);
-    padding: 24px;
+    padding: 1%;
 
 }
 
@@ -344,9 +346,10 @@ video {
 }
 
 @media (max-width: 1200px) {
-   .header {
-    height: 10vh;
-
-  }
+    .text-area{
+        flex-direction: column-reverse;
+    }
+    
+  
 
 }

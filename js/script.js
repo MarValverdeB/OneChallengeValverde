@@ -58,7 +58,7 @@ function desencriptar(stringDesencriptada){
  function btnLimpiar(){
     textArea.value = "";
     mensaje.value = "";
-    mensaje.style.backgroundImage= "URL('../image/futurista-mujer.png')";
+    mensaje.style.backgroundImage= "URL('../image/mujer-pelo-blanco.png')";
 }
 
 function btnTextToClipboard(){

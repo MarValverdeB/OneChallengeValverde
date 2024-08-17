@@ -18,7 +18,7 @@
     </header>
 
     <video class="video__background" autoplay muted loop>
-        <source src="/video/tarjetamadre.mp4" type="video/mp4">
+        <source src= "/video/tarjetamadre.mp4" type="video/mp4">
       </video>
 
     <main>
@@ -27,11 +27,10 @@
             <textarea class="text-area" cols="40" rows="10"  placeholder="Ingrese el texto aqui">
             </textarea>
             <div>
-                <h6 class="informacion_alerta"><img src="./icon/icons8-alerta-16.png" alt="alert icon"> 
+                <h6 class="informacion__alerta"><img src="./icon/icons8-alerta-16.png" alt="alert icon"> 
                 No acepta mayusculas y caracteres especiales</h6>
             </div>
             <div>
-                <div class="botones"></div>
                 <button class="botones btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                 <button class="botones btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                 <button class="botones btn-limpiar" onclick="btnLimpiar()">Limpiar</button>
@@ -41,14 +40,14 @@
 
         <section>
 
-            
-            <textarea class="mensaje" cols="28" rows="13.5"></textarea>
-             <div class="boton"></div>
+            <textarea class="mensaje" cols="28" rows="10"></textarea>
+             <div>
                 <button class="boton btn-copiar" onclick="btnTextToClipboard()">copiar</button>
              </div>
              
         </section>
     </main>
+
     <script src="/js/script.js"></script>
     </div>
    <div >
