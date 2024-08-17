@@ -1,7 +1,7 @@
 :root {
     --color-primary: white !important;
     --color-secondary: #eb0aab;
-    --color-tertiary: #000000f4;
+    --color-tertiary: #00000071;
     --color-quaternary: #8867bd;
     --color-quintanary: #923294; 
     --color-hover: #e409eb;
@@ -69,19 +69,23 @@
 .header {
     color: var(--color-primary);
     font-family: var(--kanit-medium);
-    font-size: 3.125rem;
-    height: 14vh;
+    font-size: 3rem;
+    height: 5vh;
     position: relative;
     display: flex;
 }
 .logo {
-    padding-top: 2%;
-    width: 2.5%;
-    margin-left: 1%;
+    padding-top: 0.125%;
+    width: 3%;
+    margin-left: 1.12%;
 }
 
+html {
+    height: 100%;
+}
 body {
     margin: 0%;
+    min-height: 100%;
 }
 
 main{
@@ -100,10 +104,10 @@ main{
     background-color: #0000005f;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover;
     color: var(--color-primary);
     font-family: var(--kanit-medium);
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding: 1%;
     opacity: 120%;
     width: 80%;
@@ -131,10 +135,10 @@ main{
     background-color: #0000005f;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 70%;
     color: var(--color-primary); 
     font-family: var(--kanit-medium);
-    font-size: 2rem;
+    font-size: 1.75rem;
     padding-left: 2%;
     opacity: 120%;
     width: 80%;
@@ -173,7 +177,7 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    font-size: .75rem;
+    font-size: .55rem;
 }
 
 .botones:active {
@@ -287,7 +291,7 @@ main{
     cursor: pointer;
     margin-left: 22%;
     height: 4.1667%;
-    font-size: .75rem;
+    font-size: .55rem;
     position: absolute;
 }
 
@@ -302,9 +306,9 @@ main{
 
 .informacion {
     color: var(--color-primary);
-    font-size: 50px;
+    font-size: 2rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: .1%;
     font-weight: bold;
 }
 
@@ -330,7 +334,7 @@ footer {
     text-align: center;
     color: var(--color-primary);
     padding: 1%;
-
+    margin-bottom: 8%;
 }
 
 video { 
@@ -345,11 +349,50 @@ video {
     z-index: -1;
 }
 
-@media (max-width: 1200px) {
-    .text-area{
-        flex-direction: column-reverse;
+@media (max-width: 1250px) {
+    .header{
+        padding: 10%;  
+   }
+   .informacion{
+     font-size: 1.6rem;
+   }
+   main{
+     flex-direction: column;
+     align-items: center;
+     margin-top: 8.3333%;
+   }
+   .botones{
+     width: 20%;
+     flex-direction: column;
     }
-    
-  
 
+    .boton {
+    width: 20%;
+    flex-direction: column;
+    }
+
+    .text-area {
+        font-size: 1rem;
+    }
+    .mensaje{
+        width: 70%;
+        height: 50vh;
+        background-image: url("/image/mujer-pelo-blanco.png");
+        background-position: center;
+        align-items: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--color-tertiary);
+        font-size: 1rem;
+        flex-direction: column;
+    }
+    .informacion__alerta {
+        font-size: .5rem;
+    }
+
+
+    .informacion__footer{
+        text-align: center;
+        font-size: .5rem;
+    }   
 }
