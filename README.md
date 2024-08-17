@@ -1,7 +1,7 @@
 # Encriptador
 
 Encriptador es un programa que encripta y desencripta cadenas de texto.
-## Installation
+## Instalación
 
 - Utilizar la última versión de Visual Studio Code
 - Utilizar la última versión de Git
@@ -14,7 +14,7 @@ git clone https://github.com/MarValverdeB/OneChallengeValverde
 ## Paso 3️⃣ : Botón derecho en la carpeta raíz, click derecho y ejecutar Open Live Server
 
 ## La pantalla inicial se muestra a continuación:
-[![Image]"/image/pantallaInicial.png"]
+[![Image]("/image/pantallaInicial.png")]
 
 👉 Sigue estos pasos para probar la funcionalidad:
 
