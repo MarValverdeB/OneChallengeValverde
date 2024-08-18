@@ -12,10 +12,14 @@ const copyText = document.querySelector (".mensaje");
 
 
 function btnEncriptar(){
-    const textoEncriptado = encriptar(textArea.value)
-    mensaje.value =  textoEncriptado
-    textArea.value = "";
-    mensaje.style.backgroundImage= "none"
+    if(textArea.value == ""){
+        alert("No se encontró mensaje a Encriptar");
+    } else {
+        const textoEncriptado = encriptar(textArea.value)
+        mensaje.value =  textoEncriptado
+        textArea.value = "";
+        mensaje.style.backgroundImage= "none";
+    }
 }
 
 function encriptar(stringEncriptada){
@@ -34,10 +38,14 @@ function encriptar(stringEncriptada){
 
 
 function btnDesencriptar(){
-    const textoEncriptado = desencriptar(textArea.value)
-    mensaje.value =  textoEncriptado
-    textArea.value = "";
-    mensaje.style.backgroundImage= "none"
+    if(textArea.value == ""){
+        alert("Ingresar mensaje a Encriptar");
+    } else {
+        const textoEncriptado = desencriptar(textArea.value)
+        mensaje.value =  textoEncriptado
+        textArea.value = "";
+        mensaje.style.backgroundImage= "none";
+    }
 }
 
 
@@ -62,15 +70,20 @@ function desencriptar(stringDesencriptada){
 }
 
 function btnTextToClipboard(){
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); //For mobile devices
+    if(mensaje.value == ""){
+        alert("No se encontró mensaje a copiar");
+    } else {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); //For mobile devices
 
-    //Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-    mensaje.value = "";
-    mensaje.style.backgroundImage= "url('/image/futurista-mujer.png')";
-    //Alert the copied text
-    alert("Texto copiado: " +copyText.value);
+        //Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+        mensaje.value = "";
+        mensaje.style.backgroundImage= "url('/image/futurista-mujer.png')";
+        //Alert the copied text
+        alert("Texto copiado: " +copyText.value);
+    }
+
 }
 
 function inicial() {

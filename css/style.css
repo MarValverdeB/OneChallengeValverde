@@ -52,18 +52,27 @@
         font-style: normal;
   }
 
-*{
-    background: none; 
-    font-family: var(--ibm-plex-mono-medium);
-    color: var(--color-primary);
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 120%;
-    padding: 0;
-    margin: 0;
+  * {
     box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-
+.social { 
+    text-decoration: none;
 }
 
 .header {
@@ -74,27 +83,23 @@
     position: relative;
     display: flex;
 }
+
+video { 
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .logo {
     padding-top: 0.125%;
     width: 3%;
     margin-left: 1.12%;
-}
-
-html {
-    height: 100%;
-}
-body {
-    margin: 0%;
-    min-height: 100%;
-}
-
-main{
-    display:flex;
-    margin-bottom: 5.5%;
-    margin-left: 7.2%;
-    margin-right: 30%;
-    margin-top: 2%;
-    justify-content: center;
 }
 
 .text-area {
@@ -111,8 +116,7 @@ main{
     padding: 1%;
     opacity: 120%;
     width: 80%;
-    height: 50%;
-    margin-left: 25%;
+    margin-left: 10%;
     top: 90%;
     gap: 10%;
     text-transform: lowercase;
@@ -124,31 +128,6 @@ main{
 
 }
 .text-area:focus {
-    outline: none;
-}
-
-.mensaje{
-    border: none;
-    border-radius: 3%;
-    border-color: var(--color-secondary);
-    background-image: url("/image/mujer-pelo-blanco.png");
-    background-color: #0000005f;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 70%;
-    color: var(--color-primary); 
-    font-family: var(--kanit-medium);
-    font-size: 1.75rem;
-    padding-left: 2%;
-    opacity: 120%;
-    width: 80%;
-    margin-left: 60%;
-    margin-top: 0%;
-    gap: 10%;
-}
-
-
-.mensaje:focus { 
     outline: none;
 }
 
@@ -177,7 +156,7 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    font-size: .55rem;
+    font-size: .80rem;
 }
 
 .botones:active {
@@ -219,7 +198,7 @@ main{
     cursor: pointer;
     margin-top: 5%;
     height: 15%;
-    margin-left: 25%;
+    margin-left: 14%;
 }
 
 .btn-encriptar:active {
@@ -253,10 +232,33 @@ main{
     padding: 2%;
 }
 
+.mensaje {
+    border: none;
+    border-radius: 3%;
+    border-color: var(--color-secondary);
+    background-image: url("/image/mujer-pelo-blanco.png");
+    background-color: #0000005f;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 60%;
+    color: var(--color-primary);
+    font-family: var(--kanit-medium);
+    font-size: 1.75rem;
+    padding: 1%;
+    padding-left: 2%;
+    opacity: 120%;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 0%;
+    gap: 10%;
+    text-transform: lowercase;
+}
+
 .boton {
-    width: 9%;
+    width: 23%;
     display: flex;
-    margin-top: 15%;
+    margin-top: 10%;
+    height: 4.1667%;
     border-bottom: 1px solid hsla(314, 77%, 54%, 0.702);
     text-shadow: none;
     text-decoration: none !important;
@@ -264,8 +266,7 @@ main{
     color: var(--color-primary)!important;
     font-weight: bold;
     border-radius: 5%;
-    padding: 0px 0px;
-    margin: 0 3px;
+    padding: 1% 1%;    
     position: relative;
     display: inline-block;
     -webkit-transition: all 0.1s;
@@ -274,9 +275,14 @@ main{
     transition: all 0.1s;
     box-shadow: 0 5px 0 #db9dcc,
     0 11px 5px hsla(288, 90%, 62%, 0.88);
+    background-color: #000000a9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    font-size: .80rem;
 }
 
-.boton:active {
+.botones:active {
     -webkit-transform: translateY(7px);
     -moz-transform: translateY(7px);
     -o-transform: translateY(7px);
@@ -288,20 +294,17 @@ main{
     border: 1px SOLID #f605b2;
     opacity: 120%;
     border-radius: 24px;
+    color: #0bef67;
     cursor: pointer;
-    margin-left: 22%;
-    height: 4.1667%;
-    font-size: .55rem;
-    position: absolute;
-}
-
-.btn-copiar:active {
-    box-shadow: 0 3px 0 #e01ea6,
-                0 4px 6px hsla(153, 97%, 46%, 0.7);
+    margin-left: 35%;
+    margin-right: 1%;
+    margin-top: 5%;
+    height: 15%;
 }
 
 .btn-copiar:hover {
     background-color: var(--color-hover);
+    padding: 2%;
 }
 
 .informacion {
@@ -317,82 +320,57 @@ main{
     font-size: 1rem;
     font-weight: 200;
     font-family: var(--kanit-light);
-    text-align: right;
-    margin-top: 1%;
+    text-align: center;
+    margin-top: .3%;
+}
+
+.leyenda {
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: var(--kanit-light);
+    text-align: center;
+    margin-top: .3%;
 }
 
 .informacion__footer {
     color: var(--color-primary);
-    font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    margin-top: 1%;
     font-family: var(--ibm-plex-mono-medium);
 }
 
-footer {
+.footer {
     text-align: center;
     color: var(--color-primary);
-    padding: 1%;
-    margin-bottom: 8%;
-}
-
-video { 
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
     position: fixed;
     left: 0;
-    right: 0;
-    top: 0;
     bottom: 0;
-    z-index: -1;
-}
-
-@media (max-width: 1250px) {
-    .header{
-        padding: 10%;  
-   }
-   .informacion{
-     font-size: 1.6rem;
-   }
-   main{
-     flex-direction: column;
-     align-items: center;
-     margin-top: 8.3333%;
-   }
-   .botones{
-     width: 20%;
-     flex-direction: column;
+    width: 100%;
+} 
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
     }
-
-    .boton {
-    width: 20%;
-    flex-direction: column;
-    }
-
-    .text-area {
+    .text-area{
+        height: 40%;
         font-size: 1rem;
     }
     .mensaje{
-        width: 70%;
-        height: 50vh;
-        background-image: url("/image/mujer-pelo-blanco.png");
-        background-position: center;
-        align-items: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: var(--color-tertiary);
+        height: 40%;
+        background-size: 50% 50%;
         font-size: 1rem;
-        flex-direction: column;
     }
-    .informacion__alerta {
-        font-size: .5rem;
+    .botones{
+        font-size: .50rem;
     }
-
-
-    .informacion__footer{
+    .boton{
+        font-size: .50rem;
+    }
+    .informacion__alerta{
         text-align: center;
-        font-size: .5rem;
-    }   
-}
+        font-size: .70rem;
+    }
+  }
